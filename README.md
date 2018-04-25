@@ -18,7 +18,9 @@ ACFplot(xt)
 
 Notice how that produces a shitty title. Let's improve this a little and add a title, custom z values and specify lags for more precision.
 ```{python}
-ACFplot(np.exp(abs(qqq['Open'] - qqq['Close'])), maxlags=12, title="Open less Closing Price of QQQ", z1 = 1.96, z2 = 1.645)
+ACFplot(np.exp(abs(qqq['Open'] - qqq['Close'])), maxlags=12,
+        title="Open less Closing Price of QQQ",
+        z1 = 1.96, z2 = 1.645)
 ```
 
 For more, see the quick example notebook in the directory above.
