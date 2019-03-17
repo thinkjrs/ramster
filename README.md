@@ -22,6 +22,16 @@ ACFplot(np.exp(abs(qqq['Open'] - qqq['Close'])), maxlags=12,
         title="Open less Closing Price of QQQ",
         z1 = 1.96, z2 = 1.645)
 ```
+#### `coupon_combos.py`
+
+###### Example
+Run the tests:
+`pytest -vv test_coupon_combos.py`
+
+```python
+>>> from coupon_combos import combine_frames
+>>> combine_frames(df1, df2)
+```
 
 For more, see the quick example notebook in the directory above.
 
